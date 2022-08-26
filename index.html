@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Tax Calculator Website</title>
 </head>
 <body>
     <div class="container">
         <!-- Navigation -->
-        <nav>
-            <h1>LOGO</h1>
-            <ul class="nav-items">
-                <a href="#"><li>Calculator</li></a>
-                <a href="#"><li>Tax Slabs</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="#"><li>About</li></a>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    LOGO
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Tax Slabs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- Header Hero Section -->
         <header class="header">
@@ -27,7 +32,7 @@
                 <input type="text" placeholder="Enter Amout Here">
                 <select name="duration" id="duration">
                     <option value="monthly">Monthly</option>
-                    <option value="monthly">Yearly</option>
+                    <option value="Annually">Annually</option>
                 </select>
                 <button>Calculate</button>
             </div>
@@ -36,16 +41,19 @@
         <!-- Tax Detail Section -->
         <div class="details">
             <h3>Income Tax Slabs</h3>
-            <p><b>As per Federal Budget 2022-2023 presented by Government of Pakistan, following slabs and income tax rates will be applicable for salaried persons for the year 2022-2023:</b></p>
-            <ul>
-                <li> Where the taxable salary income does not exceed Rs. 600,000 the rate of income tax is 0%.</li>
-                <li>Where the taxable salary income exceeds Rs. 600,000 but does not exceed Rs. 1,200,000 the rate of income tax is Rs. 100</li>
-                <li>Where the taxable salary income exceeds Rs. 1,200,000 but does not exceed Rs. 2,400,000 the rate of income tax is 7% of the amount exceeding Rs. 1,200,000.</li>
-                <li>Where the taxable salary income exceeds Rs. 2,400,000 but does not exceed Rs. 3,600,000 the rate of income tax is Rs. 84,000 + 12.5% of the amount exceeding Rs. 2,400,000.</li>
-                <li>Where the taxable salary income exceeds Rs. 3,600,000 but does not exceed Rs. 6,000,000 the rate of income tax is Rs. 234,000 + 17.5% of the amount exceeding Rs. 3,600,000.</li>
-                <li>Where the taxable salary income exceeds Rs. 6,000,000 but does not exceed Rs. 12,000,000 the rate of income tax is Rs. 654,000 + 22.5% of the amount exceeding Rs. 6,000,000.</li>
-                <li>Where the taxable salary income exceeds Rs. 12,000,000 the rate of income tax is Rs. 2,004,000 + 32.5% of the amount exceeding Rs. 12,000,000.</li> 
-            </ul>
+            <div class="tax-content">
+                <p>As per Federal Budget 2022-2023 presented by Government of Pakistan, following slabs and income tax rates will be applicable for salaried persons for the year 2022-2023:</p>
+                <ul>
+                    <li>Where the taxable salary income does not exceed Rs. 600,000 the rate of income tax is 0%.</li>
+                    <li>Where the taxable salary income exceeds Rs. 600,000 but does not exceed Rs. 1,200,000 the rate of income tax is Rs. 100</li>
+                    <li>Where the taxable salary income exceeds Rs. 1,200,000 but does not exceed Rs. 2,400,000 the rate of income tax is 7% of the amount exceeding Rs. 1,200,000.</li>
+                    <li>Where the taxable salary income exceeds Rs. 2,400,000 but does not exceed Rs. 3,600,000 the rate of income tax is Rs. 84,000 + 12.5% of the amount exceeding Rs. 2,400,000.</li>
+                    <li>Where the taxable salary income exceeds Rs. 3,600,000 but does not exceed Rs. 6,000,000 the rate of income tax is Rs. 234,000 + 17.5% of the amount exceeding Rs. 3,600,000.</li>
+                    <li>Where the taxable salary income exceeds Rs. 6,000,000 but does not exceed Rs. 12,000,000 the rate of income tax is Rs. 654,000 + 22.5% of the amount exceeding Rs. 6,000,000.</li>
+                    <li>Where the taxable salary income exceeds Rs. 12,000,000 the rate of income tax is Rs. 2,004,000 + 32.5% of the amount exceeding Rs. 12,000,000.</li> 
+                </ul>
+            </div>
+            
         </div>
         <!-- Contact Section -->
         <div class="contact">

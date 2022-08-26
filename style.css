@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.wrapper {
+    background: linear-gradient(180.96deg, #020074 9.73%, #7C0070 75.78%);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 1440px;
+    margin: 0 auto;
+}
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+}
+.nav-items {
+    display: flex;
+}
+.nav-items li {
+    margin-right: 50px;
+    list-style: none; 
+}
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+.header {
+    background-image: url('./img/header-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header h1 {
+    text-transform: uppercase;
+    color: #020074;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.header p {
+    margin-bottom: 20px;
+}
+.header .calculator-sec input[type=text] {
+    padding: 15px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin-right: 20px;padding: 15px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin-right: 20px;
+    width: 200px;
+}
+.header .calculator-sec select {
+    padding: 15px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin-right: 20px;
+    width: 200px;
+}
+.header .calculator-sec button {
+    padding: 15px;
+    width: 150px;
+    background-color: #020074;
+    color: #fff;
+    font-weight: 700;
+}
+.details {
+    padding: 75px;
+    
+}
+.details h3 {
+    text-align: center;
+    color: #7C0070
+}
+.details .tax-content {
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+.details p {
+    margin: 20px 0px;
+    font-weight: 600;
+}
+.details ul {
+    text-indent: 15px;
+}
+.details ul li {
+    line-height: 32px;
+    list-style: none;
+}
+.details ul li:before {
+    content: "\2022";
+    color: #020074;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 34px;
+    vertical-align: bottom;
+}
