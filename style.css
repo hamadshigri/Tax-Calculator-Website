@@ -6,8 +6,11 @@
 body {
     font-family: sans-serif;
 }
+
+/* Navigation */
+
 .wrapper {
-    background: linear-gradient(180.96deg, #020074 9.73%, #7C0070 75.78%);
+    background: linear-gradient(180deg, #020074 0%, #7C0070 100%);
 }
 nav {
     display: flex;
@@ -35,6 +38,9 @@ nav {
     font-weight: 700;
     font-size: 18px;
 }
+
+/* Header Hero Section */
+
 .header {
     background-image: url('./img/header-bg.png');
     background-position: center;
@@ -74,28 +80,34 @@ nav {
 }
 .header .calculator-sec button {
     padding: 15px;
-    width: 150px;
+    width: 200px;
     background-color: #020074;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 }
+
+/* Tax Details Section */
+
 .details {
-    padding: 75px;
-    
+    padding: 75px 0px;
 }
-.details h3 {
+.title-sec {
     text-align: center;
-    color: #7C0070
+    color: #7C0070;
+    font-size: 24px;
 }
 .details .tax-content {
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     padding-bottom: 40px;
     width: 80%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 40px auto;
 }
 .details p {
-    margin: 20px 0px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .details ul {
     text-indent: 15px;
@@ -112,4 +124,134 @@ nav {
     margin-left: -1em;
     font-size: 34px;
     vertical-align: bottom;
+}
+
+/* Contact Section */
+
+.contact-wrapper {
+    width: 100%;
+    margin: 40px auto;
+    background-image: url('./img/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+    align-items: center;
+}
+.contact-content {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+    align-items: center;
+}
+.contact-content .contact-text {
+    width: 40%;
+}
+.contact-content .contact-text h2 {
+    color: #7C0070;
+    font-weight: 800;
+    font-size: 24px;
+}
+.contact-content .contact-text p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 460px;
+    height:320px;
+    justify-content: center;
+    padding: 20px 20px;
+    box-shadow: 8px 4px 4px rgb(0,0,0, 0.25);
+}
+.contact-form input, textarea {
+    margin-bottom: 10px;
+    padding:10px;
+}
+.contact-form textarea {
+    resize: none;
+}
+.contact-form input[type = submit] {
+    background-color:#020074;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* About Section */
+
+.about-sec {
+    padding: 75px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+.about-sec p {
+    padding-top: 30px;
+    line-height: 2.3em;
+}
+
+/* Footer Section */
+
+footer {
+    background: linear-gradient(180deg, #020074 0%, #7C0070 100%);
+    padding: 40px 0px;
+}
+footer .social {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer .social img {
+    margin-right: 10px;
+    border: 10px solid #fff;
+    border-radius: 50px;
+}
+footer h5 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer .contact-link{
+    text-align: center;
+    margin-top: 10px;
+}
+footer .contact-link a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+
+
+/* Responsive Design */
+
+@media only screen and (max-width: 640px){
+    nav {
+        width:100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .header p {
+        text-align: center;
+    }
+    .calculator-sec {
+        display: flex;
+        flex-direction: column;
+    }
+    .calculator-sec input,select,button  {
+        margin-top: 10px;
+    }
 }
