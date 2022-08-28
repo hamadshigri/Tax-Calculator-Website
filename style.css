@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body {
     font-family: sans-serif;
@@ -11,6 +12,8 @@ body {
 
 .wrapper {
     background: linear-gradient(180deg, #020074 0%, #7C0070 100%);
+    position: sticky;
+    top: 0px;
 }
 nav {
     display: flex;
@@ -38,7 +41,12 @@ nav {
     font-weight: 700;
     font-size: 18px;
 }
-
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
 /* Header Hero Section */
 
 .header {
@@ -62,25 +70,25 @@ nav {
     margin-bottom: 20px;
 }
 .header .calculator-sec input[type=text] {
-    padding: 15px;
-    border: none;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
-    margin-right: 20px;padding: 15px;
+    padding: 20px;
     border: none;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
     margin-right: 20px;
-    width: 200px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    margin-right: 20px;
+    width: 300px;
 }
 .header .calculator-sec select {
-    padding: 15px;
+    padding: 20px;
     border: none;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
     margin-right: 20px;
-    width: 200px;
+    width: 300px;
 }
 .header .calculator-sec button {
-    padding: 15px;
-    width: 200px;
+    padding: 20px;
+    width: 300px;
     background-color: #020074;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
     color: #fff;
@@ -235,10 +243,58 @@ footer .contact-link a{
 
 @media only screen and (max-width: 640px){
     nav {
-        width:100%;
+        width:80%;
+    }
+    .wrapper.active {
+        position: sticky;
+        top: 0px;
+        height: 280px;
     }
     .nav-items {
         display: none;
+    }
+    .nav-items li {
+        display: block;
+    }
+    .nav-items.active {
+        position: absolute;
+        left: 42px;
+        top: 130px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .nav-items li {
+        margin-bottom: 10px;
+    }
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .hamburger div {
+        background-color: #fff;
+        height: 3px;
+    }
+    /* .close {
+        display: block;
+    } */
+    .close:after {
+        content: "\00d7";
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        font-size: 50px;
+        top: 30px;
+        right: 48px;
+        color: #fff;
+    }
+    .header {
+        height: 500px;
     }
     .header h1 {
         font-size: 30px;
@@ -246,6 +302,8 @@ footer .contact-link a{
     }
     .header p {
         text-align: center;
+        line-height: 1.4em;
+        width: 95%;
     }
     .calculator-sec {
         display: flex;
@@ -253,5 +311,51 @@ footer .contact-link a{
     }
     .calculator-sec input,select,button  {
         margin-top: 10px;
+    }
+    .details {
+        padding: 40px 0px 0px 0px;
+    }
+    .details p {
+        line-height: 1.4em;
+    }
+    .details .tax-content {
+        box-shadow: none;
+        width: 85%;
+    }
+    .contact-wrapper {
+        background-position: right center;
+    }
+    .contact-content {
+        display: block;
+        background-color: #fff0;
+    }
+    .contact-content .contact-text h2 {
+        margin-left: 25px;
+    }
+    .contact-content .contact-text {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 30px;
+        background-color: transparent;
+    }
+    .contact-text p {
+        display: none;
+    }
+    .about-sec {
+        padding: 0px 0px 20px 0px;
+        width: 85%;
+    }
+    footer .social img {
+        width: 80%;
+    }
+    footer .social a {
+        margin-right: 0px;
+    }
+    footer h5 {
+        width: 85%;
+        margin: 10px auto 0px auto;
+        line-height: 1.4em;
     }
 }
