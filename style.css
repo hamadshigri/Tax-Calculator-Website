@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body {
     font-family: sans-serif;
@@ -280,9 +279,6 @@ footer .contact-link a{
         background-color: #fff;
         height: 3px;
     }
-    /* .close {
-        display: block;
-    } */
     .close:after {
         content: "\00d7";
         display: inline-block;
